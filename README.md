@@ -110,7 +110,6 @@ Book-Shopping-Website/
 ├── vite.config.js
 └── README.md
 
----
 
 ## Live Deployment
 
