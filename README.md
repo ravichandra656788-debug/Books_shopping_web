@@ -109,3 +109,11 @@ Book-Shopping-Website/
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
+
+---
+
+## Live Deployment
+
+The Online Book Shopping Website is deployed on Vercel.
+
+**Live Website:** [Visit the Online Book Shopping Website](https://books-shopping-web-wd3v.vercel.app/)
