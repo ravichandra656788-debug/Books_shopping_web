@@ -1,118 +1,282 @@
-# Book Shopping Website
+# Online Book Shopping Website
 
-A user-friendly online book shopping web application developed using ReactJS and Vite. The application allows users to browse books, search for books, view book details, manage a shopping cart, and work with application data stored using Supabase.
+A simple online book shopping website developed using **ReactJS, Vite, JavaScript, HTML, CSS, React Router, and Supabase**.
 
-## Project Overview
+The application allows users to browse books, search for books, view book details, compare books, manage a shopping cart, and proceed to checkout.
 
-The Book Shopping Website provides a digital platform for readers to explore and manage books online.
+---
 
-The application is designed to make book browsing and shopping simple and convenient. Users can navigate through the website, search for books, view book information, add selected books to the cart, and manage selected items.
+## 1. Problem Statement
 
-Supabase is used as the backend database for storing and retrieving the required application data.
+Readers need an online platform where they can easily:
 
-## Problem Statement
+- Search for books
+- Browse available books
+- View book details
+- Compare books
+- Add books to a shopping cart
+- Proceed to checkout
+- Manage their profile
 
-Readers need an online platform to search, compare, purchase, and review books.
+The project provides a simple web-based platform to support these requirements.
 
-The proposed website provides a centralized platform where users can browse available books, search for required books, view book details, add selected books to a shopping cart, and manage their selected books.
+---
 
-## Objectives
+## 2. Project Objective
 
-- Provide a simple and user-friendly book shopping interface.
-- Allow users to browse available books.
-- Provide book search functionality.
-- Display book details.
-- Allow users to manage selected books in a shopping cart.
-- Store and retrieve application data using Supabase.
-- Provide navigation between application pages.
-- Deploy the application online using Vercel.
-- Use GitHub for version control and team collaboration.
+The main objective is to develop a user-friendly online book shopping platform using ReactJS.
 
-## Main Features
+The project focuses on:
 
-### Book Browsing
+- Simple and responsive interface
+- Book browsing and searching
+- Book details
+- Book comparison
+- Shopping cart
+- Checkout
+- User login and profile
+- Database connectivity using Supabase
 
-Users can browse the available books through the website.
+---
 
-### Book Search
-
-Users can search for books using relevant search terms.
-
-### Book Details
-
-Users can select a book and view its available information.
-
-### Shopping Cart
-
-Users can add selected books to the cart and manage selected items.
-
-### Database Integration
-
-Supabase is used to store and retrieve application data.
-
-### Navigation
-
-React Router is used to navigate between application pages.
-
-### Responsive Interface
-
-The interface is designed to provide a simple and user-friendly experience across different screen sizes.
-
-## Technology Stack
+## 3. Technology Stack
 
 | Technology | Purpose |
 |---|---|
 | ReactJS | Frontend development |
-| Vite | Development server and build tool |
+| Vite | React project setup |
 | JavaScript | Application logic |
-| JSX | React component structure |
-| HTML | Web structure |
-| CSS | Styling and responsive design |
+| JSX | React components |
+| HTML | Page structure |
+| CSS | Styling |
 | React Router | Page navigation |
-| Supabase | Backend database |
+| Supabase | Database and backend services |
 | Node.js | JavaScript runtime |
 | npm | Package management |
 | Git | Version control |
-| GitHub | Code hosting and collaboration |
-| Visual Studio Code | Development environment |
+| GitHub | Code collaboration |
 | Vercel | Deployment |
 
-## Development Environment
+---
 
-- Operating System: Windows
-- Code Editor: Visual Studio Code
-- Runtime: Node.js
-- Package Manager: npm
-- Frontend: ReactJS + Vite
-- Database: Supabase
-- Version Control: Git + GitHub
-- Deployment: Vercel
-
-## Project Structure
+## 4. Project Structure
 
 ```text
-Book-Shopping-Website/
+book-shopping/
 │
 ├── public/
+│   └── images/
 │
 ├── src/
-│   ├── assets/
+│   │
 │   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── SearchBar.jsx
+│   │   └── BookCard.jsx
+│   │
 │   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Books.jsx
+│   │   ├── BookDetails.jsx
+│   │   ├── Compare.jsx
+│   │   ├── Cart.jsx
+│   │   ├── Checkout.jsx
+│   │   ├── Login.jsx
+│   │   └── Profile.jsx
+│   │
 │   ├── services/
+│   │   └── supabase.js
+│   │
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
 │
+├── .env
 ├── .gitignore
+├── index.html
 ├── package.json
-├── package-lock.json
-├── vite.config.js
 └── README.md
+```
 
+---
 
-## Live Deployment
+## 5. Installation
 
-The Online Book Shopping Website is deployed on Vercel.
+### Prerequisites
 
-**Live Website:** [Visit the Online Book Shopping Website](https://books-shopping-web-wd3v.vercel.app/)
+- Node.js
+- npm
+- Git
+- VS Code
+
+Check the installation:
+
+```bash
+node --version
+npm --version
+git --version
+```
+
+---
+
+## 6. Clone the Project
+
+```bash
+git clone <GitHub-Repository-URL>
+```
+
+```bash
+cd book-shopping
+```
+
+Open the project in VS Code:
+
+```bash
+code .
+```
+
+---
+
+## 7. Install Dependencies
+
+```bash
+npm install
+```
+
+Install React Router and Supabase if required:
+
+```bash
+npm install react-router-dom @supabase/supabase-js
+```
+
+---
+
+## 8. Run the Project
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite, normally:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 9. GitHub Workflow
+
+Pull the latest project:
+
+```bash
+git pull origin main
+```
+
+After making changes:
+
+```bash
+git add .
+git commit -m "Updated project"
+git push origin main
+```
+
+---
+
+## 10. Vercel Deployment
+
+Build the project:
+
+```bash
+npm run build
+```
+
+The production output directory is:
+
+```text
+dist
+```
+
+### Deployment Steps
+
+1. Push the latest code to GitHub.
+2. Import the repository into Vercel.
+3. Use the Vite build settings.
+4. Add required environment variables.
+5. Deploy the project.
+
+---
+
+## 11. Live Website
+
+https://books-shopping-web-wd3v.vercel.app/
+
+---
+
+## 12. Testing Checklist
+
+- [ ] Home page works
+- [ ] Navigation works
+- [ ] Books page works
+- [ ] Search works
+- [ ] Book details page works
+- [ ] Compare page works
+- [ ] Cart works
+- [ ] Checkout page works
+- [ ] Login page works
+- [ ] Profile page works
+- [ ] Supabase connection works
+- [ ] Website works after deployment
+
+---
+
+## 13. Common Commands
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start development server
+
+```bash
+npm run dev
+```
+
+### Create production build
+
+```bash
+npm run build
+```
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+### Pull latest code
+
+```bash
+git pull origin main
+```
+
+### Push changes
+
+```bash
+git add .
+git commit -m "Updated project"
+git push origin main
+```
+
+---
+
+## 14. Conclusion
+
+The **Online Book Shopping Website** provides a simple platform for users to browse, search, compare, and manage books through a ReactJS web application.
+
+The project uses ReactJS and Vite for the frontend, React Router for navigation, Supabase for database services, GitHub for collaboration, and Vercel for deployment.
