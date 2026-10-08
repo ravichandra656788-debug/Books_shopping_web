@@ -1,10 +1,10 @@
-# Online Book Shopping Website
+# Book Shopping Website
 
 A user-friendly online book shopping web application developed using ReactJS and Vite. The application allows users to browse books, search for books, view book details, manage a shopping cart, and work with application data stored using Supabase.
 
 ## Project Overview
 
-The Online Book Shopping Website provides a digital platform for readers to explore and manage books online.
+The Book Shopping Website provides a digital platform for readers to explore and manage books online.
 
 The application is designed to make book browsing and shopping simple and convenient. Users can navigate through the website, search for books, view book information, add selected books to the cart, and manage selected items.
 
@@ -91,7 +91,7 @@ The interface is designed to provide a simple and user-friendly experience acros
 ## Project Structure
 
 ```text
-Online-Book-Shopping-Website/
+Book-Shopping-Website/
 │
 ├── public/
 │
